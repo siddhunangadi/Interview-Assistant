@@ -1,4 +1,4 @@
-# [PlacementPrep AI](https://interview-assistant-9hvmqvyuvg8w8wnbrretc8.streamlit.app/)
+# PlacementPrep AI \href{https://interview-assistant-9hvmqvyuvg8w8wnbrretc8.streamlit.app/}{Live Demo}
 
 PlacementPrep AI is a multi-agent Streamlit app for placement preparation and interview practice. It analyzes a resume and job description, finds skill gaps, generates tailored questions, runs a mock interview flow, and produces a performance report with improvement guidance.
 
