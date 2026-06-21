@@ -1,0 +1,46 @@
+# ── Core LLM + LangChain ecosystem ───────────────────────────────────────────
+langchain>=0.3.0
+langchain-core>=0.3.0
+langchain-community>=0.3.0
+langchain-mistralai>=0.2.0
+
+# ── LangGraph — required for the agentic StateGraph + ReAct loops ─────────────
+# ADDED: this was completely missing from the original requirements.txt
+# despite the project claiming to be "agentic". Without langgraph there is
+# no StateGraph, no create_react_agent, and no supervisor routing.
+langgraph>=0.2.0
+
+# ── Search + scraping ─────────────────────────────────────────────────────────
+tavily-python>=0.3.0
+beautifulsoup4>=4.12.0
+requests>=2.31.0
+lxml>=5.0.0
+
+# ── PDF parsing ───────────────────────────────────────────────────────────────
+pypdf>=4.2.0
+
+# ── Environment + config ──────────────────────────────────────────────────────
+python-dotenv>=1.0.0
+
+# ── Pydantic (LangChain v0.3 requires v2) ────────────────────────────────────
+pydantic>=2.5.0
+
+# ── Async support ─────────────────────────────────────────────────────────────
+aiohttp>=3.9.0
+
+# ── Logging ───────────────────────────────────────────────────────────────────
+rich>=13.7.0
+
+# ── Retry + robustness ────────────────────────────────────────────────────────
+tenacity>=8.2.0
+
+# ── Streamlit UI ──────────────────────────────────────────────────────────────
+streamlit>=1.35.0
+
+# ── REMOVED from original ─────────────────────────────────────────────────────
+# langchain-openai  — project uses Mistral only; OpenAI dependency was unused
+# openai            — same reason; dead dependency
+# pandas            — never used anywhere in the codebase
+# tiktoken          — only needed for OpenAI token counting; not used here
+# orjson            — nice-to-have but pydantic handles JSON fine
+# html5lib          — redundant with lxml already present
